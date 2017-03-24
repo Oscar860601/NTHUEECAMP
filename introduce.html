@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/style.css"><!-- Code syntax highlighting -->
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>這堂課在幹嘛?</section>
+				<section>
+					<section>
+						科普(幹
+					</section>
+					<section>
+						我知道大家都是大師
+					</section>
+					<section>
+						而且加上其實能上課的時間不多
+					</section>
+					<section>
+						我自己是定義成：<br>
+						幫助大家在閒暇時間<br>
+						繼續提升自己程式能力的課程
+					</section>
+				</section>
+				<section>
+					<section>
+						那說真的這堂課要幹嘛
+					</section>
+					<section>
+					<p align = "left">
+						1.教一點C++<br>
+						2.教一點Data Structure<br>
+						3.教一點Algorithm<br>
+						4.教一點Functional progamming<br>
+					</pre>
+					</section>
+					<section>
+						學這些要幹嘛?
+					</section>
+					<section>
+						真正的目的是
+					</section>
+					<section>
+						程式解題!!!!
+					</section>
+				</section>
+				<section>
+					<section>
+						如果不打比賽<br>
+						程式解題有甚麼用?
+					</section>
+					<section align = "center" >
+						1.好玩<br>
+						2.加強程式實踐能力<br>
+						<h2>3.面試</h2>
+					</section>
+					<section>
+						先來看一題知名的面試題
+						<div class = "prob">
+							<div class = "label">摺紙問題</div>
+							Paper folding problem<hr/>
+							[題目]<br/>
+							把一個紙條放在桌子上,然後從紙條的下邊向上方對折一次,壓住摺痕後展開.此時摺痕式凹下去的,如果從紙條下邊向上方連續對折兩次,壓住摺痕後展開,
+							此時有三條摺痕,從上到下依次是下摺痕&nbsp;&nbsp;下摺痕&nbsp;&nbsp;上摺痕<br/>
+							[Input]  輸入一個正整數N,代表的是由下往上對折的次數<br/>
+							[Output] 輸出由上到下依次的摺痕方向<hr/>
+							Ex:<br>
+							[Input] N=2<br>
+							[Output] down,down,up<br>
+						</div>
+					</section>
+					<section>
+						這題是網路上滿知名的微軟面試題<br>
+						我一個朋友在面試北京Amazon也遇到<br>
+					</section>
+					<section>
+						基本上面試題只會給你30秒思考<br>
+						接下來就要開始跟面試官交流想法
+					</section>
+					<section>
+						這在微軟面試也只是放在第一題<br>
+						代表這題是熱身而已
+					</section>
+					<section>
+						到現在還沒有解出來<br>
+						就更不用想要提出<br>
+						好的解法在面試加分了
+					</section>
+					<section>
+						解:binary tree的中序遍歷<br>
+						(懶得做到投影片上直接用講的)
+					</section>
+				</section>
+				<section>
+					<section>
+						你以為你現在提不出這個<br>
+						解法是因為沒修過資料結構?
+					</section>
+					<section>
+						錯!<br>
+						就算修過資料結構<br>
+						沒有經過大量的實戰練習<br>
+						是不可能直覺地想到這個解法的
+					</section>
+					<section>
+						這就是這節課的目的<br>
+					</section>
+					<section>
+						訓練編程直覺
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
